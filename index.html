@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Remote Job Application </title>
+  <title>Remote Job Application</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
+    /* General Styles */
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #f4f4f9;
@@ -15,15 +16,15 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding-top: 50px; /* Added padding at the top */
+      padding: 20px; /* Added padding for smaller screens */
     }
 
     .form-container {
       background-color: #ffffff;
       padding: 2rem;
-      border-radius: 10px;
+      border-radius: 50px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      max-width: 400px;
+      max-width: 500px; /* Increased max-width for better readability */
       width: 100%;
     }
 
@@ -122,11 +123,70 @@
       margin-top: 1rem;
       text-align: center;
     }
+
+    /* Responsive Styles */
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 1.5rem; /* Reduce padding for smaller screens */
+      }
+
+      h1 {
+        font-size: 20px; /* Smaller font size for smaller screens */
+      }
+
+      .job-title {
+        font-size: 16px; /* Smaller font size for smaller screens */
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="number"],
+      input[type="date"],
+      input[type="file"] {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+        font-size: 12px; /* Smaller font size for smaller screens */
+      }
+
+      button {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+        font-size: 14px; /* Smaller font size for smaller screens */
+      }
+    }
+
+    @media (max-width: 400px) {
+      .form-container {
+        padding: 1rem; /* Further reduce padding for very small screens */
+      }
+
+      h1 {
+        font-size: 18px; /* Even smaller font size for very small screens */
+      }
+
+      .job-title {
+        font-size: 14px; /* Even smaller font size for very small screens */
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="number"],
+      input[type="date"],
+      input[type="file"] {
+        padding: 0.4rem; /* Further reduce padding for very small screens */
+        font-size: 11px; /* Even smaller font size for very small screens */
+      }
+
+      button {
+        padding: 0.4rem; /* Further reduce padding for very small screens */
+        font-size: 12px; /* Even smaller font size for very small screens */
+      }
+    }
   </style>
 </head>
 <body>
   <div class="form-container">
-    <h1> APPLICATION FORM </h1>
+    <h1>APPLICATION FORM</h1>
     <div class="job-title">Applying for: <strong>QUANTUM EDGE REMOTE JOB</strong></div>
     <form id="job-application-form">
       <div class="form-group">
